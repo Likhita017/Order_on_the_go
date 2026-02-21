@@ -1,0 +1,71 @@
+:root {
+  --primary-red: #E23744;
+  --primary-red-dark: #C81D2E;
+  --light-bg: #FFF5F6;
+  --card-bg: #ffffff;
+  --text-primary: #1C1C1C;
+  --text-secondary: #696969;
+  --border-light: #E8E8E8;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global Buttons */
+button {
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-red-dark);
+}
+
+/* Global Inputs */
+input, select, textarea {
+  padding: 8px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-red);
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--primary-red);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--primary-red-dark);
+}
